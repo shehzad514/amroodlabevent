@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amroodlabs Event</title>
+  <link rel="icon" href="Assessts/logo-negative.png" type="icon">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Niconne&family=Roboto:wght@300;400;500&family=Nexa:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <section class="navbar_sec fixed w-full top-0 z-50 transition-all duration-300">
+    <div class="overlay-animation " id="overlayAnimation">
+      <div class="circle"></div>
+    </div>
+    <div class="Container mx-auto max-w-[1550px] justify-between ">
+      <nav class="navbar flex items-center justify-between ">
+        <div class="left_nav flex items-center gap-8 w-full">
+          <div class="img_cont w-[149px] h-[64px] flex items-center">
+            <img class="w-full transition-opacity duration-300" src="Assessts/logo.png" alt="logo-negative" />
+          </div>
+          <div class="links_cont flex justify-between bg-transparent" id="nav_ul">
+            <ul class="midle flex items-center gap-2.5">
+              <li class="list-none"><a href="#home">Home</a></li>
+              <li class="list-none"><a href="#speakers">Speakers</a></li>
+              <li class="list-none"><a href="#schedule">Schedule</a></li>
+              <li class="list-none"><a href="#registration">Registration</a></li>
+              <li class="list-none"><a href="#about">About</a></li>
+
+            </ul>
+            <div class="contact_btn">
+              <button class="border-2 border-white rounded-full py-2 px-8 text-white
+              bg-transparent font-medium cnt_btn">Contact</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="right_nav flex items-center">
+          <div class="hamburger flex-col justify-between items-center cursor-pointer">
+            <span class="block bg-white transition-all duration-300"></span>
+            <span class="block bg-white transition-all duration-300"></span>
+            <span class="block bg-white transition-all duration-300"></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+  <section id="home" class="home_sec">
+    <div class="Container  mx-auto">
+      <div class="home_cont flex items-center justify-between ">
+        <div class="left_home flex flex-col gap-12">
+          <div class="heading_up">
+            <h3 class="text-8xl font-bold text-white ">Event</h3>
+            <h1 class="text-7xl font-extrabold text-white ">PyCon 2024</h1>
+            <h2 class="text-5xl font-extrabold text-white font-nexa">at Amrood Labs</h2>
+          </div>
+
+          <div class="heading_down flex flex-col gap-2 pl-6 text-white">
+            <div class="date flex items-center gap-5">
+              <i class="fa fa-calendar text-3xl text-white" aria-hidden="true"></i>
+              <h4 class="text-4xl" >09 Dec, 2024</h4>
+            </div>
+
+            <div>
+            <a href="https://www.google.com/maps/place/Amrood+Labs+(Pvt)+LTD/@31.4630591,74.278256,14z/data=!4m10!1m2!2m1!1s283-B2,Block+B2,Phase+1,Johar+Town,Lahore!3m6!1s0x39190128e778da0d:0xd3f4231a85eda17e!8m2!3d31.4635056!4d74.2982888!15sCikyODMtQjIsQmxvY2sgQjIsUGhhc2UgMSxKb2hhciBUb3duLExhaG9yZVorIikyODMgYjIgYmxvY2sgYjIgcGhhc2UgMSBqb2hhciB0b3duIGxhaG9yZZIBEHNvZnR3YXJlX2NvbXBhbnmaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUTJNbTgzV2xaQkVBReABAA!16s%2Fg%2F11rs9lygb_?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"
+              target="_blank" rel="noopener noreferrer">
+              <div class="location flex items-center gap-5">
+                <i class="fa fa-map-marker text-4xl text-white" aria-hidden="true"></i>
+                <p class="text-base">283-B2, Block B 2 Phase 1 Johar Town, Lahore</p>
+              </div>
+            </a> </div>
+          </div>
+        </div>
+        <div class="right_home flex items-center justify-center">
+          <div class="right_home_img w-[450px]">
+            <img class="w-full" src="Assessts/pycon-logo.png" alt="pycon-logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="time_sec ">
+    <div class="Container">
+      <div class="flex items-center justify-between time_cont ">
+        <div class="time_left">
+          <h2 class=" font-bold text-4xl">PyCon Pakistan 2024</h2>
+          <h3 class="font-bold text-lg">Monday, 09 December 2024</h3>
+        </div>
+        <div class="flex gap-4 items-center time_right">
+          <div class="flex flex-col items-center shadow-md justify-center time_div">
+            <h2>00</h2>
+            <p>DAYS</p>
+          </div>
+          <div class="flex flex-col items-center shadow-md justify-center time_div">
+            <h2>00</h2>
+            <p>HOURS</p>
+          </div>
+          <div class="flex flex-col items-center shadow-md justify-center time_div">
+            <h2>00</h2>
+            <p>MINUTES</p>
+          </div>
+          <div class="flex flex-col items-center shadow-md justify-center time_div">
+            <h2>00</h2>
+            <p>SECONDS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="speakers" class="speakers_sec">
+    <div class="Container">
+      <div class="flex flex-col items-center gap-10 speakers_cont">
+        <div class="speakers_heading">
+          <h1 class="font-bold text-3xl text-center" >Meet Our Speakers</h1>
+        </div>
+
+        <div class="flex items-center gap-5 justify-between speakers_details">
+          <div class="flex flex-col items-center shadow-md cursor-pointer speakers_details_cont">
+            <div class="speakers_details_cont_img">
+              <img src="Assessts/regis.jpg" alt="regis image" />
+            </div>
+            <div class="mt-8 flex flex-col items-center gap-2.5 speakers_details_cont_desc">
+              <h4 class="text-2xl font-normal text-black text-center">REGIS BEHMO</h4>
+              <p id="p1" class="text-sm font-normal text-black text-center">Keynote Speaker</p>
+              <p id="p2" class="text-sm font-bold mt-3 text-center">Vice President of Engineering, Edly</p>
+              <p id="p3" class="text-sm font-normal mt-5 text-center">Talk: Programming: the good parts</p>
+            </div>
+            <div class="mt-12 mb-5 p-4 shadow-md text-3xl font-light speakers_details_cont_linkedin">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center shadow-md cursor-pointer speakers_details_cont">
+            <div class="speakers_details_cont_img">
+              <img src="Assessts/rubab.jpg" alt="regis image" />
+            </div>
+            <div class="mt-8 flex flex-col items-center gap-2.5 speakers_details_cont_desc">
+              <h4 class="text-2xl font-normal text-black text-center">Rubab Zahra</h4>
+              <p id="p1" class="text-sm font-normal text-black text-center">Data Lead</p>
+              <p id="p2" class="text-sm font-bold mt-3 text-center">BridgeLinx Technologies</p>
+              <p id="p3" class="text-sm font-normal mt-5 text-center">Talk: Elevating Trust in Your Data with Python: A Practical Guide</p>
+            </div>
+            <div class="mt-12 mb-5 p-3.5 shadow-md text-3xl font-light speakers_details_cont_linkedin">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center shadow-md cursor-pointer speakers_details_cont">
+            <div class="speakers_details_cont_img">
+              <img src="Assessts/edward.jpeg" alt="regis image" />
+            </div>
+            <div class="mt-8 flex flex-col items-center gap-2.5 speakers_details_cont_desc">
+              <h4 class="text-2xl font-normal text-black text-center">Edward Zarecor</h4>
+              <p id="p1" class="text-sm font-normal text-black text-center">Keynote Speaker</p>
+              <p id="p2" class="text-sm font-bold mt-3 text-center">Vice President of Engineering, Axim Collaborative</p>
+              <p id="p3" class="text-sm font-normal mt-5 text-center">Talk: Seeking Maintainers: Why Open Source Needs You</p>
+            </div>
+            <div class="mt-12 mb-5 p-3.5 shadow-md text-3xl font-light speakers_details_cont_linkedin">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5 mb-12 more_btn">
+          <button class="rounded-full py-4 px-10 border-2  text-white font-medium text-5sm cursor-pointer showmore_btn">Show More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="schedule_sec">
+    <div class="Container">
+      <div class="schedule_cont py-8 flex flex-col items-center gap-10">
+        <div class="schedule_heading">
+          <h1 class="font-bold text-3xl text-center">Schedule</h1>
+        </div>
+
+        <div class="schedule_detail w-full mb-8">
+          <table class="w-full text-left border-collapse ">
+            <thead>
+              <tr>
+                <th class="px-3 py-4 text-center bg-teal-500 text-white text-lg font-semibold border-teal-500" style="width: 5%">No#</th>
+                <th class="px-3 py-4 text-center bg-teal-500 text-white text-lg font-semibold border-teal-500" style="width: 20%">Start Time</th>
+                <th class="px-3 py-4 text-center bg-teal-500 text-white text-lg font-semibold border-teal-500" style="width: 20%">End Time</th>
+                <th class="px-3 py-4 text-center bg-teal-500 text-white text-lg font-semibold border-teal-500" style="width: 30%">Speaker</th>
+                <th class="px-3 py-4 text-center bg-teal-500 text-white text-lg font-semibold border-teal-500">Talk About</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>10:00 AM</td>
+                <td>10:30 AM</td>
+                <td>Danish Ali</td>
+                <td>Introduction</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>10:30 Am</td>
+                <td>11:00 Am</td>
+                <td>Régis Behmo</td>
+                <td>Programming</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>11:00 AM</td>
+                <td>11:30 AM</td>
+                <td>Rubab Zahra Sarfraz</td>
+                <td>Elevating Trust in Your Data with Python</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>11:30 Am</td>
+                <td>12:00 PM</td>
+                <td colspan="2" style="text-align: center">Break Time</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>12:00 Pm</td>
+                <td>01:00 Pm</td>
+                <td>Edward Zarecor</td>
+                <td>Seeking maintainers</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>01:00 Pm</td>
+                <td>01:30 Pm</td>
+                <td>Numan Sheikh</td>
+                <td>ML Ops at Scale</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>01:30 Pm</td>
+                <td>02:00 Pm</td>
+                <td>Yasser Bashir</td>
+                <td>Python in Pakistan</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>02:00 Pm</td>
+                <td>03:00 Pm</td>
+                <td>Dr. Fahad Javid</td>
+                <td>ML Ops at Scale</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="registration" class="Registration_sec">
+    <div class="Container">
+      <div class="registration_cont flex flex-col items-center gap-10">
+        <div class="registration_heading text-center">
+          <h1 class="font-bold text-3xl text-center">Get Register</h1>
+        </div>
+
+        <div class="registration_details w-full flex shadow-md rounded-lg overflow-hidden mb-10">
+          <div class="registraion_left ">
+            <div class="register_here_heading text-center">
+              <h2 class="text-lg md:text-xl font-semibold text-teal-500">Register Here</h2>
+            </div>
+
+            <div class="register_form ">
+              <form id="registrationForm" class="flex flex-col gap-6">
+
+                <div class="form-group flex flex-col gap-3">
+                  <label for="name" class="text-teal-500 text-base font-normal">Name:</label>
+                  <input type="text" id="name" class="form-control border border-teal-500 p-4 rounded-3xl" placeholder="Enter your name" required />
+                </div>
+
+
+                <div class="form-group flex flex-col gap-3">
+                  <label for="email" class="text-teal-500 text-base font-normal">Email:</label>
+                  <input type="email" id="email" class="form-control border border-teal-500 p-4 rounded-3xl" placeholder="Enter your email" required />
+                </div>
+
+
+                <div class="form-group flex flex-col gap-3">
+                  <label for="payment" class="text-teal-500 text-base font-normal">Payment:</label>
+                  <input type="text" id="payment" class="form-control border border-teal-500 p-4 rounded-3xl" placeholder="Payment method (e.g., Credit Card)"
+                    required />
+                </div>
+
+                <button type="submit" class="submit_btn bg-teal-500 text-white text-base font-medium p-4 rounded-full mt-6 mb-8 cursor-pointer">
+                  Register
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="registraion_right flex items-center justify-center rounded-lg">
+            <div class="registraion_right_img">
+              <img src="Assessts/register.png" class="w-full" alt="register img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="footer_sec py-8">
+    <div class="Container">
+      <div class="footer_cont flex flex-col items-center gap-10">
+        <div class="footer_cont_details flex items-center justify-between">
+          <div class="footer_left ">
+            <ul class="list-none flex flex-col gap-3 items-center">
+              <li><a href="#home" class="text-white text-sm font-medium transition duration-300">Home</a></li>
+              <li><a href="#speakers" class="text-white text-sm font-medium transition duration-300">Speakers</a></li>
+              <li><a href="#schedule" class="text-white text-sm font-medium transition duration-300">Schedule</a></li>
+              <li><a href="#registration" class="text-white text-sm font-medium transition duration-300">Registration</a></li>
+              <li><a href="#about" class="text-white text-sm font-medium transition duration-300">About</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_right flex flex-col gap-3">
+            <div class="footer_logo">
+              <img src="Assessts/logo.png" class="w-full" alt="logo" />
+            </div>
+            <div class="footer_icons flex gap-4">
+              <a href="https://www.facebook.com/AmroodLabs?mibextid=ZbWKwL" class="text-teal-500 text-3xl transition duration-300" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+
+              <a href="https://search.app?link=https%3A%2F%2Fwww.upwork.com%2Fagencies%2Famroodlabs%2F&utm_campaign=aga&utm_source=agsadl1%2Csh%2Fx%2Fgs%2Fm2%2F4 "
+              class="text-teal-500 text-3xl transition duration-300" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/company/amrood-labs/" class="text-teal-500 text-3xl transition duration-300" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+
+              <a href="https://www.amroodlabs.com" class="text-teal-500 text-3xl transition duration-300" target="_blank">
+                <i class="fa fa-dribbble" aria-hidden="true"></i>
+              </a>
+
+              <a href="https://search.app?link=https%3A%2F%2Fgithub.com%2Famrood-labs&utm_campaign=aga&utm_source=agsadl1%2Csh%2Fx%2Fgs%2Fm2%2F4"
+              class="text-teal-500 text-3xl transition duration-300" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="Js/script.js"></script>
+
+</html>

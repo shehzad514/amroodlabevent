@@ -1,0 +1,1679 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Container {
+    max-width: 1550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+
+}
+.navbar
+{
+    padding: 3px 80px;
+}
+.navbar_sec {
+    background-color: #00d1b2;
+    transition: background-color 0.3s ease-in-out box-shadow 0.3s ease;
+    padding: 5px;
+}
+.img_cont {
+    width: 120px;
+    height: 45px;
+}
+
+.links_cont {
+    width: 90%;
+    transition: 0.3s ease;
+}
+
+.links_cont ul li a {
+
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3 ease;
+    position: relative;
+    padding: 5px 0;
+}
+
+.links_cont ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.links_cont ul li a:hover::after {
+    width: 100%;
+}
+
+
+.hamburger {
+    display: none;
+    width: 28px;
+    height: 22px;
+    cursor: pointer;
+}
+
+
+.hamburger span {
+    width: 100%;
+    height: 2px;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 10px;
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -10px;
+}
+
+.cnt_btn {
+    cursor: pointer;
+    transition: border 0.3s ease, color 0.3s ease;
+    font-weight: 400;
+}
+
+.cnt_btn:hover {
+    background-color: white;
+    color: #2a4642;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* end of navbar */
+
+/* start of home sec */
+.home_sec {
+    background-color: #00d1b2;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+.overlay-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #00D1B2;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1);
+}
+
+
+@keyframes slideOverlay {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+}
+
+@keyframes circleGlow {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(2);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8);
+
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.animate-overlay {
+    opacity: 1;
+    animation: slideOverlay 1s ease-in-out forwards;
+}
+
+.animate-overlay .circle {
+    animation: circleGlow 1s ease-in-out forwards;
+}
+
+.home_cont {
+    height: auto;
+    margin-top: 20px;
+    padding: 170px 100px;
+    
+}
+
+.heading_down a {
+    text-decoration: none;
+    color: white;
+}
+
+.left_home {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.heading_up h3 {
+    font-family: 'Niconne', cursive;
+    font-weight: 400;
+}
+
+.heading_up h1 {
+    font-family: 'Nexa', sans-serif;
+}
+
+.heading_up h2 {
+    font-family: 'Nexa', sans-serif;
+   
+}
+
+.location,
+.location p {
+    padding-left: 3px;
+}
+
+.date h4 {
+    font-family: 'Nexa', sans-serif;
+}
+
+.location p {
+    font-family: 'Nexa', sans-serif;
+}
+/* end of home section */
+
+/* start of time section */
+.time_cont {
+    padding: 86px 110px;
+}
+
+.time_left h2 {
+    color: #00000099;
+    font-family: 'Nexa', sans-serif;
+}
+
+.time_left h3 {
+    color: #00D1B2;
+    font-family: 'Nexa', sans-serif;
+}
+.time_div {
+    width: 100px;
+    height: 100px;
+}
+
+.time_div h2 {
+    color: #00D1B2;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.time_div p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #00000030;
+}
+
+/* end of time_sec */
+
+/* start of Speaker_sec */
+.speakers_sec {
+    background-color: #D9D9D9;
+}
+
+.speakers_cont {
+    padding: 23px 110px;
+   
+}
+
+.speakers_heading h1 {
+    font-family: 'Nexa', sans-serif;
+    color: #444f64;
+}
+
+.speakers_details {
+    width: 100%;
+}
+
+.speakers_details_cont {
+    width: 30%;
+    transition: 0.3s ease-in-out;
+}
+
+.speakers_details_cont:hover {
+    box-shadow: 0px 2px 6px 0px #00000040;
+    transform: scale(1.01);
+}
+
+.speakers_details_cont_img {
+    width: 100%;
+}
+
+.speakers_details_cont_img img {
+    width: 100%;
+}
+
+
+
+.speakers_details_cont_desc h4 {
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+#p3 {
+    color: #777777;
+}
+
+.speakers_details_cont_linkedin {
+    color: #727171;
+}
+
+.showmore_btn {
+    border: #00d1b2;
+    background-color: #00D1B2;
+    transition: border 0.3s ease, color 0.3s ease;
+    transition: 0.3s ease-in-out;
+}
+
+.showmore_btn:hover {
+    background-color: transparent;
+    border: 2px solid #00D1B2;
+    color: #00D1B2;
+
+}
+
+.speaker-card {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: transform 0.9s ease-out, opacity 0.6s ease-out;
+}
+.speaker-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* end of speaker_sec */
+/* start of schedule sec */
+
+.schedule_cont {
+    padding: 23px 110px;
+}
+
+.schedule_heading h1 {
+    font-family: 'Nexa', sans-serif;
+    color: #444f64;
+}
+.schedule_detail th {
+    background-color: #00D1B2;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #00D1B2;
+}
+
+.schedule_detail td {
+    padding: 20px 12px;
+    border: 2px solid #00D1B2;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* end of schedule sec */
+
+/* start of registration sec */
+.registration_cont {
+    padding: 23px 110px;
+}
+
+.registration_heading h1 {
+    font-family: 'Nexa', sans-serif;
+    color: #444f64;
+
+}
+
+.registraion_left {
+    width: 60%;
+    padding-top: 17px;
+    padding-left: 44px;
+    padding-right: 125px;
+}
+
+.register_here_heading h2 {
+    color: #00D1B2;
+}
+.register_form
+{
+    margin-top: 20px;
+}
+.form-group label {
+    color: #00D1B2;
+}
+
+.form-group input {
+    border: 1px solid #00d1b2;
+}
+
+.submit_btn {
+
+    background-color: #00D1B2;
+    border: 2px solid #00D1B2;
+    transition: 0.3s ease-in-out;
+}
+
+.submit_btn:hover {
+    background-color: transparent;
+    border: 2px solid #00D1B2;
+    color: #00D1B2;
+}
+
+.registraion_right {
+    width: 40%;
+    background-color: #00D1B2;
+    
+}
+
+.registraion_right_img {
+    width: 80%;
+}
+
+/* end of registraion_sec */
+
+/* start of footer sec */
+.footer_sec {
+    background-color: #444F60;
+}
+
+.footer_cont {
+    padding: 23px 110px;
+}
+
+.footer_cont_details {
+    width: 60%;
+}
+
+.footer_left ul li a:hover {
+    color: #00D1B2;
+}
+
+.footer_right {
+    width: 40%;
+}
+
+.footer_logo {
+    width: 50%;
+}
+
+.footer_icons i {
+    color: #00D1B2;
+}
+
+.footer_icons i:hover {
+    color: white;
+}
+
+/* start of responsiveness */
+@media (max-width: 1300px) {
+    .navbar
+    {
+        padding: 3px 20px;
+    }
+    .home_cont
+    {
+        padding: 100px 80px;
+        padding-bottom: 130px;
+    }
+    .heading_up h3 {
+        font-size: 90px;
+    }
+
+    .heading_up h1 {
+        font-size: 60px;
+    }
+
+    .heading_up h2 {
+        font-size: 38px;
+    }
+
+    .heading_down {
+        padding-left: 30px;
+    }
+
+    .date i {
+        font-size: 28px;
+    }
+
+    .location i {
+        font-size: 33px;
+    }
+
+    .date h4 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .location p {
+        font-size: 14px;
+    }
+
+    .right_home_img {
+        width: 390px;
+    }
+
+    .time_left h2 {
+        font-size: 30px;
+    }
+
+    .time_left h3 {
+        font-size: 16px;
+    }
+
+    .time_div {
+        width: 90px;
+        height: 90px;
+    }
+
+    .time_div h2 {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 1230px) {
+    
+    .left_nav {
+        gap: 20px;
+    }
+
+    .img_cont {
+        width: 130px;
+    }
+
+    .links_cont ul li a {
+        font-size: 14px;
+    }
+    .time_cont {
+        padding: 86px 80px;
+    }
+
+    .speakers_cont,
+    .schedule_cont,
+    .registration_cont,
+    .footer_cont {
+        padding: 23px 80px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .heading_up h3 {
+        font-size: 80px;
+    }
+
+    .heading_up h1 {
+        font-size: 50px;
+    }
+
+    .heading_up h2 {
+        font-size: 28px;
+    }
+
+    .heading_down {
+        padding-left: 20px;
+    }
+
+    .date i {
+        font-size: 23px;
+    }
+
+    .location i {
+        font-size: 28px;
+    }
+
+    .date h4 {
+        font-size: 20px;
+    }
+
+    .location p {
+        font-size: 12px;
+    }
+
+    .right_home_img {
+        width: 320px;
+    }
+
+    .time_left h2 {
+        font-size: 28px;
+    }
+
+    .time_left h3 {
+        font-size: 14px;
+    }
+
+    .time_div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .time_div h2 {
+        font-size: 26px;
+    }
+
+    .form-group {
+        gap: 10px;
+    }
+    .speakers_heading h1,
+    .schedule_heading h1,
+    .registration_heading h1 {
+        font-size: 30px;
+    }
+
+    .schedule_detail
+    {
+        margin-bottom: 20px;
+    }
+    .register_here_heading h2 {
+        font-size: 18px;
+    }
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+    .form-group input {
+        border: 1px solid #00d1b2;
+        padding: 15px 24px;
+        font-size: 15px;
+    }
+
+    .submit_btn {
+        border: 1px solid #00d1b2;
+        font-size: 15px;
+        padding: 13px 18px;
+    }
+
+    .footer_icons i {
+        font-size: 25px;
+    }
+
+    .footer_left ul li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .left_nav {
+        gap: 15px;
+    }
+    .home_cont
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .img_cont {
+        width: 120px;
+    }
+
+    .links_cont ul li a {
+        font-size: 13px;
+    }
+
+    .time_cont {
+        padding: 80px 50px;
+    }
+
+    .time_left h2 {
+        font-size: 26px;
+    }
+
+    .time_left h3 {
+        font-size: 12px;
+    }
+
+    .time_div {
+        width: 70px;
+        height: 70px;
+    }
+
+    .time_div h2 {
+        font-size: 25px;
+    }
+
+    .speakers_cont,
+    .registration_cont,
+    .schedule_cont {
+        padding: 23px 50px;
+    }
+
+    .speakers_heading h1,
+    .schedule_heading h1,
+    .registration_heading h1 {
+        font-size: 28px;
+    }
+
+    .speakers_details {
+        gap: 20px;
+    }
+
+    .speakers_details_cont_desc h4 {
+        font-size: 20px;
+    }
+
+    #p1,
+    #p2,
+    #p3 {
+        font-size: 10px;
+    }
+
+    #p2 {
+        margin-top: 8px;
+    }
+
+    .speakers_details_cont_linkedin {
+        padding: 10px 15px;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .showmore_btn {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .schedule_detail th {
+        font-size: 18px;
+    }
+
+    .schedule_detail td {
+        font-size: 14px;
+    }
+
+    .registraion_left {
+        padding-top: 15px;
+        padding-left: 40px;
+        padding-right: 110px;
+
+    }
+    .register_form
+    {
+        margin-top: 10px;
+    }
+    .form-group {
+        gap: 8px;
+    }
+
+    .register_here_heading h2 {
+        font-size: 16px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        border: 1px solid #00d1b2;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .submit_btn {
+        border: 1px solid #00d1b2;
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    #registrationForm {
+        padding: 15px;
+    }
+
+    .footer_cont {
+        padding: 18px 50px;
+    }
+
+    .footer_icons i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 870px) {
+    .navbar {
+        padding: 5px 20px;
+    }
+    .home_cont
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .left_nav {
+        gap: 10px;
+    }
+
+    .img_cont {
+        width: 100px;
+    }
+
+    .links_cont ul li a {
+        font-size: 12px;
+    }
+
+    .cnt_btn {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .heading_up h3 {
+        font-size: 70px;
+    }
+
+    .heading_up h1 {
+        font-size: 40px;
+    }
+
+    .heading_up h2 {
+        font-size: 22px;
+    }
+
+    .heading_down {
+        padding-left: 12px;
+        gap: 10px;
+    }
+
+    .date i {
+        font-size: 18px;
+    }
+
+    .location i {
+        font-size: 23px;
+    }
+
+    .date h4 {
+        font-size: 16px;
+    }
+
+    .location p {
+        font-size: 10px;
+        padding-left: 0px;
+    }
+
+    .right_home_img {
+        width: 280px;
+    }
+
+    .time_cont {
+        padding: 78px 20px;
+    }
+
+    .time_left h2 {
+        font-size: 24px;
+    }
+
+    .time_left h3 {
+        font-size: 10px;
+    }
+
+    .time_div {
+        width: 60px;
+        height: 60px;
+    }
+
+    .time_div h2 {
+        font-size: 23px;
+    }
+
+    .time_div p {
+        font-size: 10px;
+    }
+
+    .speakers_cont {
+        padding: 18px 20px;
+    }
+
+    .speakers_heading h1,
+    .schedule_heading h1,
+    .registration_heading h1 {
+        font-size: 28px;
+    }
+
+    .showmore_btn {
+        margin-top: 6px;
+        font-size: 12px;
+    }
+
+    .schedule_cont {
+        padding: 18px 20px;
+    }
+
+    .schedule_cont {
+        gap: 30px;
+    }
+
+    .schedule_detail th {
+        font-size: 16px;
+    }
+
+    .schedule_detail td {
+        font-size: 12px;
+    }
+
+    .registration_cont {
+        padding: 17px 20px;
+    }
+
+    .registraion_left {
+        padding-top: 15px;
+        padding-left: 35px;
+        padding-right: 80px;
+    }
+
+    .register_form
+    {
+        margin-top: 5px;
+    }
+    .form-group {
+        gap: 4px;
+    }
+
+    .register_here_heading h2 {
+        font-size: 14px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input {
+        border: 1px solid #00d1b2;
+        padding: 12px 18px;
+        font-size: 12px;
+    }
+
+    .submit_btn {
+        border: 1px solid #00d1b2;
+        font-size: 12px;
+        padding: 11px 13px;
+    }
+
+    #registrationForm {
+        gap: 10px;
+    }
+
+    .footer_cont {
+        padding: 16px 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    .navbar {
+        padding: 5px 10px;
+    }
+    .hamburger {
+        display: flex;
+        z-index: 1;
+    }
+
+    #nav_ul {
+        background: #00D1B2;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.5s ease-in-out;
+        pointer-events: none;
+        margin-top: 27px;
+        padding-bottom: 15px;
+        gap: 20px;
+
+    }
+    .midle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav_ul.open {
+        color: white;
+        opacity: 1;
+        pointer-events: auto;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(20%)
+    }
+
+    .home_cont {
+        padding: 100px 10px;
+        padding-bottom: 170px;
+    }
+
+    .time_cont {
+        padding: 75px 10px;
+    }
+
+    .speakers_cont,
+    .registration_cont,
+    .schedule_cont {
+        padding: 20px 10px;
+    }
+
+    .speakers_details {
+        gap: 10px;
+    }
+
+    .speakers_details_cont {
+        width: 32%;
+    }
+
+    .registraion_left {
+        padding-top: 14px;
+        padding-left: 30px;
+        padding-right: 60px;
+    }
+
+    .footer_icons i {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .Container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .navbar {
+        padding: 5px 0px;
+    }
+
+    .home_cont {
+        padding: 90px 10px;
+        padding-bottom: 170px;
+    }
+
+    .heading_up h3 {
+        font-size: 70px;
+    }
+
+    .heading_up h1 {
+        font-size: 40px;
+    }
+
+    .heading_up h2 {
+        font-size: 24px;
+    }
+
+    .heading_down {
+        padding-left: 10px;
+        gap: 10px;
+    }
+
+    .date i {
+        font-size: 18px;
+    }
+
+    .location i {
+        font-size: 23px;
+    }
+
+    .date h4 {
+        font-size: 15px;
+    }
+
+    .location p {
+        font-size: 10px;
+    }
+
+    .right_home_img {
+        width: 220px;
+    }
+
+    .time_cont {
+        padding: 75px 0px;
+    }
+
+    .time_left h2 {
+        font-size: 22px;
+    }
+
+    .time_left h3 {
+        font-size: 8px;
+    }
+
+    .time_div {
+        width: 50px;
+        height: 50px;
+    }
+
+    .time_div h2 {
+        font-size: 21px;
+    }
+
+    .time_div p {
+        font-size: 8px;
+    }
+
+    .speakers_cont {
+        padding: 15px 00px;
+    }
+
+    .schedule_cont {
+        padding: 14px 0px;
+    }
+
+    .schedule_cont,
+    .registration_cont,
+    .schedule_cont {
+        gap: 25px;
+    }
+
+    .registration_cont {
+        padding: 14px 0px;
+    }
+
+    .registraion_left {
+        padding-top: 14px;
+        padding-left: 20px;
+        padding-right: 60px;
+    }
+
+    .register_here_heading h2 {
+        font-size: 12px;
+    }
+
+    .form-group label {
+        font-size: 10px;
+    }
+
+    .form-group input {
+        border: 1px solid #00d1b2;
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+
+    .submit_btn {
+        border: 1px solid #00d1b2;
+        font-size: 10px;
+        padding: 10px 12px;
+    }
+
+    #registrationForm {
+        gap: 10px;
+    }
+
+    .registration_cont {
+        padding: 15px 0px;
+    }
+}
+
+@media (max-width:560px) {
+
+    .home_cont {
+        flex-direction: column;
+        gap: 50px;
+        padding: 80px 0px;
+        padding-bottom: 170px;
+    }
+    .left_home {
+        width: 100%;
+    }
+
+    .right_home {
+        width: 100%;
+    }
+
+    .right_home_img {
+        width: 320px;
+    }
+
+    .heading_up h3 {
+        font-size: 80px;
+    }
+
+    .heading_up h1 {
+        font-size: 50px;
+    }
+    .heading_up h2 {
+        font-size: 28px;
+    }
+
+
+    .date i {
+        font-size: 23px;
+    }
+
+    .location i {
+        font-size: 28px;
+    }
+
+    .date h4 {
+        font-size: 20px;
+    }
+
+    .location p {
+        font-size: 12px;
+    }
+
+    .time_cont {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .time_left h2 {
+        font-size: 34px;
+    }
+
+    .time_left h3 {
+        font-size: 18px;
+    }
+
+    .time_div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .time_div h2 {
+        font-size: 26px;
+    }
+
+    .time_div p {
+        font-size: 14px;
+    }
+
+    .speakers_details {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .speakers_details_cont {
+        width: 100%;
+    }
+
+    #p1,
+    #p2,
+    #p3 {
+        font-size: 15px;
+    }
+
+    .speakers_details_cont_linkedin {
+        padding: 15px 20px;
+        font-size: 30px;
+    }
+
+    .schedule_cont {
+        gap: 20px;
+    }
+
+    .schedule_detail th {
+        font-size: 10px;
+    }
+
+    .schedule_detail td {
+        font-size: 8px;
+    }
+
+    .registration_details {
+        flex-direction: column-reverse;
+    }
+
+    .registraion_left {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .registraion_right {
+        width: 100%;
+    }
+
+    .register_here_heading h2 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .form-group input {
+        padding: 17px 29px;
+        font-size: 14px;
+        padding-left: 20px;
+    }
+
+    .submit_btn {
+        font-size: 16px;
+        padding: 17px 20px;
+        margin-top: 20px;
+    }
+
+    .footer_cont_details {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .footer_left ul {
+        align-items: center;
+    }
+
+    .footer_left ul li a {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .footer_right {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer_logo {
+        width: 30%;
+    }
+
+    .footer_icons i {
+        font-size: 30px;
+    }
+
+    .schedule_detail th {
+        padding: 8px 3px;
+    }
+
+    .schedule_detail td {
+        padding: 10px 0px;
+    }
+
+}
+
+@media (max-width:450px) {
+    .time_cont {
+        gap: 10px;
+        padding: 60px 0px;
+    }
+
+    .time_left h2 {
+        font-size: 27px;
+    }
+
+    .time_left h3 {
+        font-size: 12px;
+    }
+
+    .time_div {
+        width: 60px;
+        height: 60px;
+    }
+
+    .time_div h2 {
+        font-size: 23px;
+    }
+
+    .time_div p {
+        font-size: 12px;
+    }
+
+    .speakers_heading h1,
+    .schedule_heading h1,
+    .registration_heading h1 {
+        font-size: 25px;
+    }
+
+    .speakers_cont,
+    .schedule_cont,
+    .registration_cont {
+        gap: 30px;
+    }
+
+    .register_here_heading h2 {
+        font-size: 16px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        padding: 14px 20px;
+        font-size: 12px;
+        padding-left: 15px;
+    }
+
+    .submit_btn {
+        font-size: 12px;
+        padding: 5px 10px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width:400px) {
+    .Container {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .right_home_img {
+        width: 200px;
+    }
+
+    .heading_up h3 {
+        font-size: 70px;
+    }
+
+    .heading_up h1 {
+        font-size: 40px;
+    }
+
+    .heading_up h2 {
+        font-size: 24px;
+    }
+
+    .heading_down {
+        padding-left: 10px;
+    }
+
+    .date i {
+        font-size: 20px;
+    }
+
+    .location i {
+        font-size: 25px;
+    }
+
+    .date h4 {
+        font-size: 18px;
+    }
+
+    .location p {
+        font-size: 10px;
+    }
+
+    .speakers_heading h1,
+    .schedule_heading h1,
+    .registration_heading h1 {
+        font-size: 22px;
+    }
+
+    .schedule_cont,
+    .speakers_cont,
+    .registration_cont {
+        gap: 15px;
+    }
+
+    .schedule_detail th {
+        font-size: 7px;
+    }
+
+    .schedule_detail td {
+        font-size: 6px;
+    }
+
+    .registraion_left {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .registration_cont {
+        gap: 22px;
+    }
+    .submit_btn {
+        font-size: 8px;
+        padding: 8px 5px;
+    }
+
+    .footer_cont_details {
+        gap: 30px;
+    }
+
+    .footer_left ul li a {
+        font-size: 14px;
+    }
+
+    .footer_icons i {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width:330px) {
+    .time_cont {
+        padding: 50px 0px;
+    }
+
+    .time_left h2 {
+        font-size: 23px;
+    }
+
+    .time_left h3 {
+        font-size: 10px;
+    }
+
+    .time_div {
+        width: 50px;
+        height: 50px;
+    }
+
+    .time_div h2 {
+        font-size: 20px;
+    }
+
+    .time_div p {
+        font-size: 10px;
+    }
+
+    .time_right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .speakers_heading h1,
+    .schedule_heading h1,
+    .registration_heading h1 {
+        font-size: 18px;
+    }
+
+    #p1,
+    #p2,
+    #p3 {
+        font-size: 8px;
+    }
+
+    #p3 {
+        margin-top: 8px;
+    }
+
+    .speakers_details_cont_linkedin {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    .showmore_btn {
+        margin-top: 5px;
+    }
+
+    .schedule_cont,
+    .speakers_cont,
+    .registration_cont {
+        gap: 10px;
+    }
+
+    .schedule_detail th {
+        font-size: 6px;
+    }
+
+    .schedule_detail td {
+        font-size: 5px;
+    }
+
+    .register_here_heading h2 {
+        font-size: 14px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input {
+        padding: 12px 18px;
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    #registrationForm button 
+    {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    .registration_heading h1 {
+        font-size: 18px;
+    }
+
+    .registration_cont {
+        gap: 20px;
+    }
+
+    .footer_left ul li a {
+        font-size: 12px;
+    }
+
+    .footer_icons i {
+        font-size: 20px;
+    }
+
+    .schedule_detail th {
+        padding: 8px 3px;
+    }
+
+    .schedule_detail td {
+        padding: 10px 0px;
+    }
+
+    .schedule_detail {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width:310px) {
+    .right_home_img {
+        width: 100px;
+    }
+
+    .heading_up h3 {
+        font-size: 50px;
+    }
+
+    .heading_up h1 {
+        font-size: 20px;
+    }
+
+    .heading_up h2 {
+        font-size: 14px;
+    }
+
+    .heading_down {
+        padding-left: 5px;
+        gap: 3px;
+    }
+
+    .date i {
+        font-size: 15px;
+    }
+
+    .location i {
+        font-size: 15px;
+    }
+
+    .date h4 {
+        font-size: 12px;
+    }
+
+    .location p {
+        font-size: 8px;
+        padding-left: 0px;
+    }
+
+    .time_left h2 {
+        font-size: 18px;
+    }
+
+    .time_left h3 {
+        font-size: 8px;
+    }
+
+    .schedule_detail th {
+        padding: 8px 3px;
+    }
+
+    .schedule_detail td {
+        padding: 10px 0px;
+    }
+    .footer_icons i
+    {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:250px) {
+    .schedule_detail th {
+        font-size: 4px;
+    }
+
+    .schedule_detail td {
+        font-size: 3px;
+    }
+
+    .schedule_detail th {
+        padding: 5px 2px;
+    }
+
+    .schedule_detail td {
+        padding: 10px 0px;
+    }
+}
